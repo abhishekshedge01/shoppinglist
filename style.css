@@ -1,0 +1,189 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg,#8052ec,#d161ff);
+}
+
+.heading
+{
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    background-color: rgb(92, 1, 104);
+}
+
+.heading h1
+{
+    font-size: 30px;
+    color: azure;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 10px 50px rgb(255, 255, 255);
+}
+
+.inside
+{
+    top: 50%;
+    position: absolute;
+    width: 40%;
+    min-width: 450px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    text-align: left;
+}
+
+.newtask
+{
+    background-color: #fff;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.newtask input
+{
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 5%;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+.newtask input:focus{
+    outline: none;
+    border-color: #8052ec;
+}
+
+.newtask button:hover{
+    background-color: #6f3beb;
+}
+
+ul
+{
+    padding: 10px;
+}
+
+.newtask button{
+    width: 20%;
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #8052ec;
+    cursor: pointer;
+}
+
+.tasks
+{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.task
+{
+    background-color: #fff;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    border-bottom: 2px solid rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.task span{
+    font-weight: 400;
+    font-family: cursive;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.task button
+{
+    color: #fff;
+    height: 100%;
+    width: 35px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: crimson;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete
+{
+    text-decoration: none;
+}
+
+.completed
+{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 500px) 
+{
+    .inside
+    {
+        min-width: 350px;
+        width: 80%;
+        padding: 26px 34px;
+    }
+
+    .newtask
+    {
+        display: block;
+    }
+
+    .newtask input
+    {
+        width: 100%;
+        height: 43px;
+        margin-bottom: 20px;
+    }
+
+    .newtask button
+    {
+        width: 100%;
+        height: 43px;
+    }
+
+    .tasks
+    {
+        margin-top: 45px;
+    }
+
+    .task button
+    {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.calc
+{
+    text-align: center;
+    margin-top: 50px;
+}
